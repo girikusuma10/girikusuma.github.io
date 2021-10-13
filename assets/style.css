@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+  } 
+img{
+    width: 50%;
+    background-repeat: no-repeat;
+}
+body{
+    font-family: 'poppins', 'sans-serif';
+    padding: 0;
+    margin: 0;
+}
+header{
+    margin-bottom: 100px;
+    position: relative;
+    
+}
+
+.kepala{
+    background-color: #f5be37;
+}
+
+.judul{
+    color: white;
+    text-align: left;
+    font-size: 35px;
+    padding: 20px 0px 20px 60px;
+}
+
+.gamjul{
+    padding: 80px 0px 20px 100px;
+    align-content: flex-end;
+}
+
+button {
+    padding: 25px;
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+
+nav{
+    background-color: rgb(9, 121, 121);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    font-weight: bold;
+}
+.img-header{
+    width: 80%;
+}
+
+.img-nav{
+    width: 150px;
+    padding-right: 150px;
+}
+.right{
+    text-align: right;
+    padding-right: 50px;
+}
+
+aside{
+    width: 25%;
+    padding-left: 50px;
+    
+}
+
+main{
+    padding: 20px;
+    overflow: auto;
+}
+
+h2, h3{
+    color: teal;
+}
+
+.img-kes{
+    padding-left: 50px;
+    margin-top: 10px;
+    width: 75%;
+}
+
+.text{
+    text-align: justify;
+}
+
+.dampak{
+    text-align: center;
+    font-size: 30px;
+}
+
+.kesehatan{
+    font-size: 30px;
+}
+
+.margin{
+    margin-bottom: 100px;
+}
+
+.posisi{
+    text-align: center;
+    padding: 20px;
+}
+
+.judul-text{
+    font-size: 20px;
+}
+
+.font{
+    font-size: 12px;
+
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: teal;
+    text-align: center;
+    font-weight: bold;
+}
+.data-pribadi{
+    text-align: center;
+}
+.data-pribadi h4{
+    color: white;
+    background-color: #3ED394;
+    padding: 5px 0px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.card{
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+span{
+    padding:10px;
+    position: relative;
+    width: 250px;
+    height: 80px;
+    font-size: 24px;
+    background: #3BF2C8;
+    color: #FFFFFF;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 999;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.show {
+    display:block;
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+ul .dropbtn{
+    position: absolute;
+    top: 5px;
+}
+
+/* Responsive */
+@media screen and (max-width: 764px){
+    .judul,.gamjul,aside,.col-6,.col-4,.col-8{
+        width: 100% !important;
+    }
+    .col-4{
+        padding: 0;
+    }
+    h1,p{
+        font-size: 1em;
+    }
+    nav{
+        display: inline-block;
+    }
+    .right{
+        display: none;
+    }
+}
